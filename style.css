@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.4s ease;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 10vh;
+  background-color: #ffe137;
+  color: #f00000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.nav-bar .title {
+  font-size: 2rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-weight: 500;
+  color: black;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.nav-bar ul li {
+  cursor: pointer;
+}
+
+.nav-bar ul li:hover {
+  color: rgb(255, 0, 0);
+}
+
+/* search-section */
+#search-section {
+  height: 30vh;
+  background-image: linear-gradient(#0905364d, #05042eb3),
+    url("https://images.pexels.com/photos/277253/pexels-photo-277253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 8vw;
+}
+
+#search-section h1 {
+  color: #ffe137;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.search-container {
+  width: 70%;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  width: 100%;
+  font-size: 1.5rem;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 10px;
+}
+
+.search-container span {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 0;
+  padding: 10px 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* recipe-card-section */
+#recipe-card-section {
+  padding: 1vw 8vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 12px;
+  min-height: 50VH;
+}
+
+.card {
+  max-width: 300px;
+  min-height: 420px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  background-color: #ffe137;
+}
+
+.image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #ff0000;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: 0.3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+.btn {
+  padding: 0 1.1rem;
+}
+
+
+/* recipe-details */
+#recipe-details {
+  padding: 1vw 8vw;
+}
+
+.title-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.title-container p {
+  color: #808080;
+}
+
+.img-container {
+  width: 100%;
+  height: 70vh;
+  background-color: #ffe137;
+  margin: 1rem 0;
+  border-radius: 18px;
+}
+
+.img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+
+.ingredient-container h2 {
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.ingredient-container ul {
+  margin-left: 4vw;
+  margin-bottom: 1vw;
+  font-size: 1.3rem;
+}
+
+.instructions-container h2 {
+  margin: 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.instructions-container p {
+  font-size: 1.3rem;
+}
+
+
+/* footer */
+footer {
+  width: 100%;
+}
+
+.footer-head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffe137;
+  padding: 1vw 8vw;
+}
+
+.footer-head h3{
+  font-size: 2rem;
+}
+
+.footer-head .footer-head-right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer-head .footer-head-right p {
+  font-size: 1rem;
+}
+
+.footer-head .footer-head-right button {
+  padding: 12px 30px;
+  border: none;
+  background-color: #f00000;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+.footer-end {
+  background-color: #ffc400;
+  padding: 5px 8vw;
+}
+
