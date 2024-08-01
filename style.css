@@ -232,6 +232,46 @@ body {
   font-size: 1.3rem;
 }
 
+/* option-container */
+#option-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1vw 8vw;
+}
+
+.opns-box {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+.option {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.option img {
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.option p {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
 
 /* footer */
 footer {
